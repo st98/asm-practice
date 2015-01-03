@@ -11,7 +11,7 @@ boot:
 loop:
   lodsb
   test al, al
-  jz end
+  jz fin
 
   mov ah, 0x0e
   mov bh, 0x00
@@ -20,7 +20,7 @@ loop:
 
   jmp loop
 
-end:
+fin:
   hlt
 
 msg:
